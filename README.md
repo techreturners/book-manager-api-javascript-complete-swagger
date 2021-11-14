@@ -13,6 +13,7 @@ This is the starter repository for the Further APIs session. It provides a start
 - [Sequelize](https://sequelize.org/)
 - [MySQL2 Driver](https://www.npmjs.com/package/mysql2)
 - [Jest](https://jestjs.io/)
+- [Supertest](https://www.npmjs.com/package/supertest)
 - [ESLint](https://eslint.org/)
 
 ### How to Get Started
