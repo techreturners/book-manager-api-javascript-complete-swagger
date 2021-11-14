@@ -1,0 +1,29 @@
+{
+  "name": "api-lab-1-solution-javascript",
+  "version": "1.0.0",
+  "description": "A repository used to demonstrate API creation using NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techreturners/api-lab-1-solution-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techreturners/api-lab-1-solution-javascript/issues"
+  },
+  "homepage": "https://github.com/techreturners/api-lab-1-solution-javascript#readme",
+  "dependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-google": "^0.14.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}
