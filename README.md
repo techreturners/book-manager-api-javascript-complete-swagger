@@ -11,6 +11,7 @@ This is the starter repository for the Further APIs session. It provides a start
 
 - [ExpressJS](https://expressjs.com/)
 - [Sequelize](https://sequelize.org/)
+- [MySQL2 Driver](https://www.npmjs.com/package/mysql2)
 - [Jest](https://jestjs.io/)
 - [ESLint](https://eslint.org/)
 

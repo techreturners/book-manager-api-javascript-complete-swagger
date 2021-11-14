@@ -11,5 +11,4 @@ app.get('/', (req, res) => res.send('Welcome to the Drinks API!'));
 
 app.use('/api', routes);
 
-console.log('Express started on port 3000');
-app.listen(3000);
+module.exports = app;
