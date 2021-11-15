@@ -2,7 +2,6 @@
   "name": "api-lab-1-solution-javascript",
   "version": "1.0.0",
   "description": "A repository used to demonstrate API creation using NodeJS",
-  "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
     "test": "jest"
