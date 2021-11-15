@@ -1,5 +1,8 @@
+const {bookService} = require('../services');
+
 const getBooks = async (req, res) => {
-  res.json([]).status(200);
+  const books = await bookService.getBooks();
+  res.json(books).status(200);
 };
 
 module.exports = {

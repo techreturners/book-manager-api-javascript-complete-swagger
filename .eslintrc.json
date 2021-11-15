@@ -1,6 +1,7 @@
 {
     "extends": ["eslint:recommended", "google"],
     "rules": {
+        "max-len": ["error", { "code": 150 }]
     },
     "env": {
         "node": true,
