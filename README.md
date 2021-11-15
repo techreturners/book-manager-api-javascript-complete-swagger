@@ -5,14 +5,12 @@ This is the starter repository for the Further APIs session. It provides a start
 
 ### Pre-Requisites
 - NodeJS installed (v14.18.1 Long Term Support version at time of writing)
-- A database running MySQL. You can find a database SQL file to create your database.
 
 ### Technologies & Dependencies
 
 - [ExpressJS](https://expressjs.com/)
 - [Sequelize](https://sequelize.org/)
 - [SQLite3](https://www.npmjs.com/package/sqlite3)
-- [MySQL2 Driver](https://www.npmjs.com/package/mysql2)
 - [Jest](https://jestjs.io/)
 - [Supertest](https://www.npmjs.com/package/supertest)
 - [ESLint](https://eslint.org/)
