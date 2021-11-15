@@ -36,6 +36,7 @@ describe('GET /api/v1/books endpoint', () => {
   });
 
   test('books successfully returned as empty array when no data', async () => {
+    // Arrange
     bookService.getBooks = jest.fn().mockReturnValue([]);
     // Act
     const res = await request(app).get('/api/v1/books');
@@ -45,11 +46,44 @@ describe('GET /api/v1/books endpoint', () => {
   });
 
   test('books successfully returned as array of books', async () => {
+    // Arrange
     bookService.getBooks = jest.fn().mockReturnValue(dummyBookData);
     // Act
     const res = await request(app).get('/api/v1/books');
 
     // Assert
     expect(res.body).toEqual(dummyBookData);
+  });
+});
+
+describe('GET /api/v1/books/{bookId} endpoint', () => {
+  test('status code successfully 200 for a book that is found', async () => {
+    // Arrange
+    bookService.getBook = jest.fn().mockReturnValue(dummyBookData[1]);
+    // Act
+    const res = await request(app).get('/api/v1/books/2');
+
+    // Assert
+    expect(res.statusCode).toEqual(200);
+  });
+
+  test('status code successfully 404 for a book that is not found', async () => {
+    // Arrange
+    bookService.getBook = jest.fn().mockReturnValue(undefined);
+    // Act
+    const res = await request(app).get('/api/v1/books/77');
+
+    // Assert
+    expect(res.statusCode).toEqual(404);
+  });
+
+  test('controller successfully returns book object as JSON', async () => {
+    // Arrange
+    bookService.getBook = jest.fn().mockReturnValue(dummyBookData[1]);
+    // Act
+    const res = await request(app).get('/api/v1/books/2');
+
+    // Assert
+    expect(res.body).toEqual(dummyBookData[1]);
   });
 });
