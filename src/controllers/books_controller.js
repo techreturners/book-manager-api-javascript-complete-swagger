@@ -22,8 +22,17 @@ const saveBook = async (req, res) => {
   res.status(201).json(book);
 };
 
+// User Story 4 - Update Book By Id Solution
+const updateBook = async (req, res) => {
+  const bookUpdateData = req.body;
+  const bookId = req.params.bookId;
+  const book = await bookService.updateBook(bookId, bookUpdateData);
+  res.status(204).json(book);
+};
+
 module.exports = {
   getBooks,
   getBook,
   saveBook,
+  updateBook, // User Story 4 - Update Book By Id Solution
 };
