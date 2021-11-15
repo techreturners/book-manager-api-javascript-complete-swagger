@@ -16,7 +16,14 @@ const getBook = async (req, res) => {
   }
 };
 
+const saveBook = async (req, res) => {
+  const bookToBeSaved = req.body;
+  const book = await bookService.saveBook(bookToBeSaved);
+  res.status(201).json(book);
+};
+
 module.exports = {
   getBooks,
   getBook,
+  saveBook,
 };

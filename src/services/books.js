@@ -10,7 +10,12 @@ const getBook = async (bookId) => {
   });
 };
 
+const saveBook = async (book) => {
+  return Book.create(book);
+};
+
 module.exports = {
   getBooks,
   getBook,
+  saveBook,
 };
