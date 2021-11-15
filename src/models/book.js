@@ -17,7 +17,7 @@ const Book = sequelize.define('Book', {
     allowNull: false,
   },
 }, {
-  modelName: 'User',
+  modelName: 'Book',
 });
 
 const environment = process.env.NODE_ENV || 'dev';
