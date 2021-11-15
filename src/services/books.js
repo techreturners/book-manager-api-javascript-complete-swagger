@@ -1,6 +1,7 @@
+const Book = require('../models/book');
+
 const getBooks = async () => {
-  // TODO: Access database for fetching books
-  return;
+  return Book.findAll();
 };
 
 module.exports = {
