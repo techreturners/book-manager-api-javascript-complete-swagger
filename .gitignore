@@ -1,5 +1,6 @@
 # Macfiles to ignore
 .DS_Store
+target
 
 # Logs
 logs
