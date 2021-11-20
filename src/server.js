@@ -3,8 +3,8 @@ require('dotenv').config({path: `./.env.${environment}`});
 const app = require('./app');
 const populateDummyData = require('./database/database_seed');
 
-app.listen(process.env.APPLICATION_PORT, () => {
-  console.log(`Express started on port ${process.env.APPLICATION_PORT}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Express started on port ${process.env.PORT}`);
 
   // Seed the database with some data
   if (environment === 'dev') {
