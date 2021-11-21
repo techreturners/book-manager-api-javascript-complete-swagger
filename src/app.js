@@ -18,7 +18,7 @@ const swaggerConfiguration = {
       'Well, you\'re in luck! This API will let you manage your books with ease! 😻',
     },
   },
-  apis: ['src/routes/index.js', '/docs/definitions.yaml'],
+  apis: ['src/routes/index.js'],
 };
 
 const swaggerDocs = swaggerJSDoc(swaggerConfiguration);
