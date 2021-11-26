@@ -48,6 +48,13 @@ You can then add a new script to the scripts section of the `package.json` to ru
 },
 ```
 
+To setup the "start-prod" in the package.json for Windows OS, you may need to set it like this:
+
+```JavaScript
+
+"start-prod": "set NODE_ENV=prod&& node src/server.js"
+
+```
 
 ```
 
